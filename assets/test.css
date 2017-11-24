@@ -20,12 +20,24 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     box-sizing: border-box;
 }
 
+.col4 { /* presuming 12 col grid system */
+    width: 33.333%;
+}
+
+.wrapper {
+    margin: 10px;
+}
+
 
 /* containers */
 body {
     color: #333;
     font-family: arial;
     min-width: 380px;
+}
+
+figure {
+    margin-bottom: 10px;
 }
 
 #content {
@@ -37,10 +49,18 @@ body {
 /* typography */
 h1 {
     font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 10px;
 }
 
 p {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 1.3;
 }
 
 a {
@@ -91,9 +111,37 @@ footer {
 }
 
 
+/* projects */
+#projects li.col {
+    margin-bottom: 10px;
+}
+
+#projects li h2 {
+    color: #666;
+    font-family: monospace;
+}
+
+#projects li p {
+    color: #999;
+}
+
+
 /* sidebar */
 #sidebar {
     background: #efefef;
     padding: 20px;
     width: 30%;
+}
+
+
+
+/* tablet/mobile */
+@media only screen and (max-width: 600px) {
+
+    .col,
+    #content,
+    #sidebar {
+        width: 100%;
+    }
+
 }
