@@ -1,0 +1,1 @@
+/* Valtech UI Test JS */
